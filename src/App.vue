@@ -3,25 +3,79 @@
   <el-container style="height:100%">
     <el-header height="69px">
       <img alt="FreekeerDevelopDocument" src="./assets/logofreekeer.png" class="logoimg">
-        -文档
+        (开发文档)
       </el-header>
       <el-container>
-        <el-aside width="200px">
+        <el-aside width="290px" style="z-index:99999;margin-top:-1px;">
             <div id="mainLeft" class="noprint">
                 <nav>
                   <div>
-                    <h3 style="margin:6px 0">Links</h3>
+                    <h3 style="margin:0">蜜蜂税服</h3>
                     <ul>
-                      <li><a href="index.html">Docs Home</a></li>
-                      <li><a href="https://wiki.apache.org/tomcat/FAQ">FAQ</a></li>
-                      <li><a href="#comments_section">User Comments</a></li>
+                      <li><router-link to="/HelloWorld">Go to Foo</router-link></li>
+                      <li><router-link to="/bar">Go to Bar</router-link></li>
+                      <li><router-link to="/HelloWorld">Go to Foo</router-link></li>
+                      <li><router-link to="/bar">Go to Bar</router-link></li>
+                      <li><router-link to="/HelloWorld">Go to Foo</router-link></li>
+                      <li><router-link to="/bar">Go to Bar</router-link></li>
+                      <li><router-link to="/HelloWorld">Go to Foo</router-link></li>
+                      <li><router-link to="/bar">Go to Bar</router-link></li>
+                      <li><router-link to="/HelloWorld">Go to Foo</router-link></li>
+                      <li><router-link to="/bar">Go to Bar</router-link></li>
+                      <li><router-link to="/HelloWorld">Go to Foo</router-link></li>
+                      <li><router-link to="/bar">Go to Bar</router-link></li>
                     </ul>
                   </div>
+                  <el-row class="tac">
+                    <el-col>
+                      <h5>自定义颜色</h5>
+                      <el-menu
+                        default-active="2"
+                        class="el-menu-vertical-demo"
+                        @open="handleOpen"
+                        @close="handleClose"
+                        background-color="#F8F3E4"
+                        text-color="#fff"
+                        active-text-color="#ffd04b">
+                        <el-submenu index="1">
+                          <template slot="title">
+                            <i class="el-icon-location"></i>
+                            <span>导航一</span>
+                          </template>
+                          <el-menu-item-group>
+                            <template slot="title">分组一</template>
+                            <el-menu-item index="1-1">选项1</el-menu-item>
+                            <el-menu-item index="1-2">选项2</el-menu-item>
+                          </el-menu-item-group>
+                          <el-menu-item-group title="分组2">
+                            <el-menu-item index="1-3">选项3</el-menu-item>
+                          </el-menu-item-group>
+                          <el-submenu index="1-4">
+                            <template slot="title">选项4</template>
+                            <el-menu-item index="1-4-1">选项1</el-menu-item>
+                          </el-submenu>
+                        </el-submenu>
+                        <el-menu-item index="2">
+                          <i class="el-icon-menu"></i>
+                          <span slot="title">导航二</span>
+                        </el-menu-item>
+                        <el-menu-item index="3" disabled>
+                          <i class="el-icon-document"></i>
+                          <span slot="title">导航三</span>
+                        </el-menu-item>
+                        <el-menu-item index="4">
+                          <i class="el-icon-setting"></i>
+                          <span slot="title">导航四</span>
+                        </el-menu-item>
+                      </el-menu>
+                    </el-col>
+                  </el-row>
                 </nav>
               </div>
         </el-aside>
         <el-container>
-          <el-main>Main</el-main>
+          <!-- <el-main><HelloWorld /></el-main> -->
+          <router-view style="padding:33px;"></router-view>
         </el-container>
       </el-container>
       <el-footer height="39px">Copyright © 2018贵州自由客网络技术有限公司版权所有 黔ICP备16000950号</el-footer>
@@ -43,6 +97,7 @@
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
+import Vue from 'vue'
 
 export default {
   name: 'app',
@@ -61,6 +116,14 @@ export default {
       }
     }
   },
+  methods: {
+      handleOpen(key, keyPath) {
+        console.log(key, keyPath);
+      },
+      handleClose(key, keyPath) {
+        console.log(key, keyPath);
+      }
+    }
 }
 </script>
 
@@ -108,7 +171,7 @@ body {
   margin-right:18px;
 }
 
-.el-aside {
+#mainLeft {
   background-color: #F8F3E4;
   color: #333;
   text-align: left;
@@ -122,28 +185,28 @@ body {
   border-right: 1px solid #bbb;
   border-bottom: 1px solid #bbb;
   border-bottom-right-radius: 20px;
-  z-index: 999;
+  z-index: 99999;
   border-top:1px solid #F8F3E4;
 }
-.el-aside  ul {
+#mainLeft  ul {
   font-size: 1px;
 
     padding: 0;
     margin: 0;
     list-style-type: none;
 }
-.el-aside  li {
+#mainLeft  li {
     display: list-item;
     text-align: -webkit-match-parent;
 }
-.el-aside  a{
+#mainLeft  a{
     text-decoration: none
 }
 .el-main {
   color: #333;
   text-align: center;
   line-height: 160px;
-  height: 555px;
+  height: 0;
 }
 
 .el-footer {
