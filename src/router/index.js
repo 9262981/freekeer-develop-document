@@ -15,8 +15,8 @@ Vue.use(VueRouter)
 // 我们晚点再讨论嵌套路由。
 const routes = [
   { path: '/', component: HelloWorld },
-  { path: '/HelloWorld', component: HelloWorld },
-  { path: '/Bar', component: Bar },
+  { path: '/HelloWorld',  name: 'HelloWorld',component: HelloWorld },
+  { path: '/Bar', name: 'Bar',component: Bar },
 ]
 
 // 3. 创建 router 实例，然后传 `routes` 配置

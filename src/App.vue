@@ -66,11 +66,13 @@ export default {
     return {
       data:[{
         label: '一级 1',
+        url:'HelloWorld',
         children: [{
           label: '二级 1-1',
+          url:'Bar',
           children: [{
             label: '三级 1-1-1',
-            url:'/HelloWorld'
+            url:'HelloWorld'
           }]
         }]
       },
@@ -116,8 +118,11 @@ export default {
         console.log(key, keyPath);
       },
       handleNodeClick(data) {
-        console.log(data);
-        router.push({ path: 'Hello' })
+        console.log(data.url);
+        this.$router.push({
+          name: data.url
+        });
+
       }
     }
 }
