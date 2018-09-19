@@ -6,12 +6,12 @@
         (开发文档)
       </el-header>
       <el-container>
-        <el-aside width="290px" style="z-index:99999;margin-top:-1px;">
+        <el-aside width="188px" style="z-index:99999;margin-top:-1px;">
             <div id="mainLeft" class="noprint">
                 <nav>
                   <div>
                     <h3 style="margin:0">蜜蜂税服</h3>
-                    <ul>
+                    <ul style="padding:6px 0 0 12px;">
                       <li><router-link to="/HelloWorld">Go to Foo</router-link></li>
                       <li><router-link to="/bar">Go to Bar</router-link></li>
                       <li><router-link to="/HelloWorld">Go to Foo</router-link></li>
@@ -24,9 +24,10 @@
                       <li><router-link to="/bar">Go to Bar</router-link></li>
                       <li><router-link to="/HelloWorld">Go to Foo</router-link></li>
                       <li><router-link to="/bar">Go to Bar</router-link></li>
+                      <el-tree :data="data" :props="defaultProps" @node-click="handleNodeClick" style="background:#F8F3E4"></el-tree>
                     </ul>
                   </div>
-                  
+
                 </nav>
               </div>
         </el-aside>
@@ -53,7 +54,6 @@
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 import Vue from 'vue'
 
 export default {
@@ -63,13 +63,47 @@ export default {
   },
   data() {
     return {
-      styleObject: {
-        width: '20%',
-        float: 'left',
-        height: document.documentElement.clientHeight + 'px',
-        background: 'red',
-        overflowY: 'auto',
-
+      data:[{
+        label: '一级 1',
+        children: [{
+          label: '二级 1-1',
+          children: [{
+            label: '三级 1-1-1',
+            url:'/HelloWorld'
+          }]
+        }]
+      },
+      // {
+      //   label: '一级 2',
+      //   children: [{
+      //     label: '二级 2-1',
+      //     children: [{
+      //       label: '三级 2-1-1'
+      //     }]
+      //   }, {
+      //     label: '二级 2-2',
+      //     children: [{
+      //       label: '三级 2-2-1'
+      //     }]
+      //   }]
+      // },
+      {
+        label: '一级 3',
+        children: [{
+          label: '二级 3-1',
+          children: [{
+            label: '三级 3-1-1'
+          }]
+        }, {
+          label: '二级 3-2',
+          children: [{
+            label: '三级 3-2-1'
+          }]
+        }]
+      }],
+      defaultProps: {
+        children: 'children',
+        label: 'label'
       }
     }
   },
@@ -79,6 +113,10 @@ export default {
       },
       handleClose(key, keyPath) {
         console.log(key, keyPath);
+      },
+      handleNodeClick(data) {
+        console.log(data);
+        router.push({ path: 'HelloWorld' })
       }
     }
 }
