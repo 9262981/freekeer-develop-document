@@ -54,6 +54,7 @@
 </template>
 
 <script>
+import HelloWorld from './components/HelloWorld.vue'
 import Vue from 'vue'
 
 export default {
@@ -116,7 +117,7 @@ export default {
       },
       handleNodeClick(data) {
         console.log(data);
-        router.push({ path: 'HelloWorld' })
+        router.push({ path: 'Hello' })
       }
     }
 }
