@@ -10,9 +10,9 @@
             <div id="mainLeft" class="noprint">
                 <nav>
                   <div>
-                    <h3 style="margin:0">蜜蜂税服</h3>
-                    <ul style="padding:6px 0 0 12px;">
-                      <li><router-link to="/HelloWorld">Go to Foo</router-link></li>
+                    <h4 style="margin:0">蜜蜂税服</h4>
+                    <ul style="padding:6px 0 0 3px;">
+                      <!-- <li><router-link to="/HelloWorld">Go to Foo</router-link></li>
                       <li><router-link to="/bar">Go to Bar</router-link></li>
                       <li><router-link to="/HelloWorld">Go to Foo</router-link></li>
                       <li><router-link to="/bar">Go to Bar</router-link></li>
@@ -23,7 +23,12 @@
                       <li><router-link to="/HelloWorld">Go to Foo</router-link></li>
                       <li><router-link to="/bar">Go to Bar</router-link></li>
                       <li><router-link to="/HelloWorld">Go to Foo</router-link></li>
-                      <li><router-link to="/bar">Go to Bar</router-link></li>
+                      <li><router-link to="/bar">Go to Bar</router-link></li> -->
+                      <el-tree :data="data" :props="defaultProps" @node-click="handleNodeClick" style="background:#F8F3E4"></el-tree>
+                      <el-tree :data="data" :props="defaultProps" @node-click="handleNodeClick" style="background:#F8F3E4"></el-tree>
+                      <el-tree :data="data" :props="defaultProps" @node-click="handleNodeClick" style="background:#F8F3E4"></el-tree>
+                      <el-tree :data="data" :props="defaultProps" @node-click="handleNodeClick" style="background:#F8F3E4"></el-tree>
+                      <el-tree :data="data" :props="defaultProps" @node-click="handleNodeClick" style="background:#F8F3E4"></el-tree>
                       <el-tree :data="data" :props="defaultProps" @node-click="handleNodeClick" style="background:#F8F3E4"></el-tree>
                     </ul>
                   </div>
