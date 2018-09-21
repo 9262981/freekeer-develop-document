@@ -2,25 +2,25 @@
 <div id="app" style="height:100%">
   <el-container style="height:100%">
     <el-header height="69px">
-      <img alt="FreekeerDevelopDocument" src="./assets/logofreekeer.png" class="logoimg">
-        (开发文档)
+      <img alt="FreekeerDevelopDocument-自由职客开发文档" src="./assets/logofreekeer.png" class="logoimg">
+
       </el-header>
       <el-container>
-        <el-aside width="188px" style="z-index:99999;margin-top:-1px;">
+        <el-aside width="288px" style="z-index:99999;margin-top:-1px;">
             <div id="mainLeft" class="noprint">
                 <nav>
                   <div>
-                    <h4 style="margin:0">蜜蜂税服</h4>
-                    <ul style="padding:6px 0 0 3px;">
+                    <h4 style="margin:0">蚂蚁税服</h4>
+                    <ul style="padding:3px 0 0 -5px;">
                      <!-- <li><router-link to="/HelloWorld">Go to Foo</router-link></li> -->
 
                       <el-tree :data="anttax" :props="defaultProps" @node-click="handleNodeClick" style="background:#F8F3E4"></el-tree>
                     </ul>
-                    <h4 style="margin:0">蜜蜂税服</h4>
-                    <ul style="padding:6px 0 0 3px;">
+                    <h4 style="margin:5px 0">A端操作:</h4>
+                    <ul style="padding:3px 0 0 -5px;">
                      <!-- <li><router-link to="/HelloWorld">Go to Foo</router-link></li> -->
 
-                      <el-tree :data="anttax" :props="defaultProps" @node-click="handleNodeClick" style="background:#F8F3E4"></el-tree>
+                      <el-tree :data="Apannel" :props="defaultProps" @node-click="handleNodeClick" style="background:#F8F3E4"></el-tree>
                     </ul>
                   </div>
 
@@ -66,8 +66,11 @@ export default {
         label: '流程结构',
         urlName:'FlowStructure'
       },{
-        label: 'UI原型',
-        urlName:'UI'
+        label: 'UI设计',
+        urlName:'UI',
+        children: [{
+            label: 'Logo',
+            urlName:'Logo'}]
       },
       // {
       //   label: '一级 2',
@@ -96,6 +99,16 @@ export default {
             label: '三级 3-2-1'
           }]
         }]
+      }],
+      Apannel:[{
+        label: 'SEO官网文章发布注意事项',
+        urlName:'newspublish'
+      },{
+        label: '流程结构',
+        urlName:'FlowStructure'
+      },{
+        label: 'UI原型',
+        urlName:'UI'
       }],
       defaultProps: {
         children: 'children',

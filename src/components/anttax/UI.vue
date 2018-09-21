@@ -1,15 +1,19 @@
 <template>
   <div class="hello">
   UI
+    <img :src="img">
+    <img src='../../assets/anttax/logo1.png' width="100%">
   </div>
 </template>
 
 <script>
+import Logo from '../../assets/logo.png';
 export default {
   name: 'UI',
 
   data() {
     return {
+      img:Logo
     }
   }
 }
