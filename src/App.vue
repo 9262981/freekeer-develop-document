@@ -12,24 +12,15 @@
                   <div>
                     <h4 style="margin:0">蜜蜂税服</h4>
                     <ul style="padding:6px 0 0 3px;">
-                      <!-- <li><router-link to="/HelloWorld">Go to Foo</router-link></li>
-                      <li><router-link to="/bar">Go to Bar</router-link></li>
-                      <li><router-link to="/HelloWorld">Go to Foo</router-link></li>
-                      <li><router-link to="/bar">Go to Bar</router-link></li>
-                      <li><router-link to="/HelloWorld">Go to Foo</router-link></li>
-                      <li><router-link to="/bar">Go to Bar</router-link></li>
-                      <li><router-link to="/HelloWorld">Go to Foo</router-link></li>
-                      <li><router-link to="/bar">Go to Bar</router-link></li>
-                      <li><router-link to="/HelloWorld">Go to Foo</router-link></li>
-                      <li><router-link to="/bar">Go to Bar</router-link></li>
-                      <li><router-link to="/HelloWorld">Go to Foo</router-link></li>
-                      <li><router-link to="/bar">Go to Bar</router-link></li> -->
-                      <el-tree :data="data" :props="defaultProps" @node-click="handleNodeClick" style="background:#F8F3E4"></el-tree>
-                      <el-tree :data="data" :props="defaultProps" @node-click="handleNodeClick" style="background:#F8F3E4"></el-tree>
-                      <el-tree :data="data" :props="defaultProps" @node-click="handleNodeClick" style="background:#F8F3E4"></el-tree>
-                      <el-tree :data="data" :props="defaultProps" @node-click="handleNodeClick" style="background:#F8F3E4"></el-tree>
-                      <el-tree :data="data" :props="defaultProps" @node-click="handleNodeClick" style="background:#F8F3E4"></el-tree>
-                      <el-tree :data="data" :props="defaultProps" @node-click="handleNodeClick" style="background:#F8F3E4"></el-tree>
+                     <!-- <li><router-link to="/HelloWorld">Go to Foo</router-link></li> -->
+
+                      <el-tree :data="anttax" :props="defaultProps" @node-click="handleNodeClick" style="background:#F8F3E4"></el-tree>
+                    </ul>
+                    <h4 style="margin:0">蜜蜂税服</h4>
+                    <ul style="padding:6px 0 0 3px;">
+                     <!-- <li><router-link to="/HelloWorld">Go to Foo</router-link></li> -->
+
+                      <el-tree :data="anttax" :props="defaultProps" @node-click="handleNodeClick" style="background:#F8F3E4"></el-tree>
                     </ul>
                   </div>
 
@@ -59,27 +50,24 @@
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 import Vue from 'vue'
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+
   },
   data() {
     return {
-      data:[{
-        label: '一级 1',
-        url:'HelloWorld',
-        children: [{
-          label: '二级 1-1',
-          url:'Bar',
-          children: [{
-            label: '三级 1-1-1',
-            url:'HelloWorld'
-          }]
-        }]
+      anttax:[{
+        label: '项目简介',
+        urlName:'Introduction'
+      },{
+        label: '流程结构',
+        urlName:'FlowStructure'
+      },{
+        label: 'UI原型',
+        urlName:'UI'
       },
       // {
       //   label: '一级 2',
@@ -123,9 +111,8 @@ export default {
         console.log(key, keyPath);
       },
       handleNodeClick(data) {
-        console.log(data.url);
         this.$router.push({
-          name: data.url
+          name: data.urlName
         });
 
       }
