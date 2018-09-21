@@ -16,11 +16,17 @@
 
                       <el-tree :data="anttax" :props="defaultProps" @node-click="handleNodeClick" style="background:#F8F3E4"></el-tree>
                     </ul>
-                    <h4 style="margin:5px 0">A端操作:</h4>
+                    <h4 style="margin:5px 0">管理A端操作:</h4>
                     <ul style="padding:3px 0 0 -5px;">
                      <!-- <li><router-link to="/HelloWorld">Go to Foo</router-link></li> -->
 
                       <el-tree :data="Apannel" :props="defaultProps" @node-click="handleNodeClick" style="background:#F8F3E4"></el-tree>
+                    </ul>
+                    <h4 style="margin:5px 0">附件:</h4>
+                    <ul style="padding:3px 0 0 -5px;">
+                     <!-- <li><router-link to="/HelloWorld">Go to Foo</router-link></li> -->
+
+                      <el-tree :data="Appendix" :props="defaultProps" @node-click="handleNodeClick" style="background:#F8F3E4"></el-tree>
                     </ul>
                   </div>
 
@@ -35,17 +41,7 @@
       <el-footer height="39px">Copyright © 2018贵州自由客网络技术有限公司版权所有 黔ICP备16000950号</el-footer>
 
   </el-container>
-  <!-- <div v-bind:style="styleObject">
-        <img alt="Vue logo" style="" src="./assets/logo.png">
-        <img alt="Vue logo" style="" src="./assets/logo.png">
-        <img alt="Vue logo" style="" src="./assets/logo.png">
-        <img alt="Vue logo" style="" src="./assets/logo.png">
-        <img alt="Vue logo" style="" src="./assets/logo.png">
-        <img alt="Vue logo" style="" src="./assets/logo.png">
-        <img alt="Vue logo" style="" src="./assets/logo.png">
-        <img alt="Vue logo" style="" src="./assets/logo.png">
-      </div>
-      <HelloWorld style="width:80%;float:right" msg="Welcome to Your Vue.js App1"/> -->
+
 </div>
 </template>
 
@@ -101,6 +97,16 @@ export default {
         }]
       }],
       Apannel:[{
+        label: 'SEO官网文章发布注意事项',
+        urlName:'newspublish'
+      },{
+        label: '流程结构',
+        urlName:'FlowStructure'
+      },{
+        label: 'UI原型',
+        urlName:'UI'
+      }],
+      Appendix:[{
         label: 'SEO官网文章发布注意事项',
         urlName:'newspublish'
       },{
