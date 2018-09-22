@@ -37,7 +37,6 @@
 </template>
 
 <script>
-import Vue from 'vue'
 
 export default {
   name: 'app',
@@ -122,12 +121,7 @@ export default {
     }
   },
   methods: {
-    handleOpen(key, keyPath) {
-      console.log(key, keyPath);
-    },
-    handleClose(key, keyPath) {
-      console.log(key, keyPath);
-    },
+
     handleNodeClick(data) {
       this.$router.push({
         name: data.urlName
