@@ -55,7 +55,7 @@ export default {
           urlName: 'FlowStructure'
         }, {
           label: 'UI设计',
-          urlName: 'UI',
+          urlName: '',
           children: [
             {
             label: 'Logo',
