@@ -1,0 +1,33 @@
+<template>
+  <div class="routerview">
+    <h3>原型图确认</h3>
+
+    <img src='../../assets/anttax/prototype05.jpg' width="45%">
+    <img src='../../assets/anttax/prototype06.jpg' width="45%">
+    <img src='../../assets/anttax/prototype07.jpg' width="45%">
+    <img src='../../assets/anttax/prototype08.jpg' width="45%">
+    <img src='../../assets/anttax/prototype02.png' width="45%">
+    <img src='../../assets/anttax/prototype03.png' width="45%">
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'Prototype',
+
+  data() {
+    return {
+      img:Logo
+    }
+  }
+}
+</script>
+
+<!-- Add "scoped" attribute to limit CSS to this component only -->
+<style scoped>
+  img{
+    border-bottom: 1px solid #bbb;
+    box-shadow: 0 0 7px #aaa;
+    padding:20px;
+  }
+</style>

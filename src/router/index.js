@@ -4,9 +4,12 @@ import VueRouter from 'vue-router'
 // 蚂蚁税服
 import Introduction from '@/components/anttax/Introduction.vue'
 import FlowStructure from '@/components/anttax/FlowStructure.vue'
+
 import UI from '@/components/anttax/UI.vue'
 import Logo from '@/components/anttax/Logo.vue'
-import Schedule from '@/components/anttax/Schedule.vue'
+import Prototype from '@/components/anttax/prototype.vue'
+
+import ScheduleV100 from '@/components/anttax/Schedule_v100.vue'
 
 // 附录
 import OrganizationChart from '@/components/appendix/organizationchart.vue'
@@ -26,7 +29,8 @@ const routes = [
   { path: '/anttax/flowstructrue', name: 'FlowStructure',component: FlowStructure },
   { path: '/anttax/ui', name: 'UI',component: UI },
   { path: '/anttax/ui/logo', name: 'Logo',component: Logo },
-  { path: '/anttax/ui/schedule', name: 'Schedule',component: Schedule },
+  { path: '/anttax/ui/prototype', name: 'Prototype',component: Prototype },
+  { path: '/anttax/schedule_v100', name: 'ScheduleV100',component: ScheduleV100 },
 
   { path: '/apanel/newspublish', name: 'NewsPublish',component: NewsPublish },
 

@@ -1,5 +1,11 @@
 <template>
-  <div style="margin-bottom:33px;">
+  <div class="routerview">
+    <h3>Logo定稿</h3>
+    <img src='../../assets/anttax/logofix1.png' width="33%">
+    <br>
+    <img src='../../assets/anttax/logofix2.png' width="33%">
+    <br>
+    <img src='../../assets/anttax/logofix3.png' width="33%">
     <h3>Logo提案</h3>
     <img src='../../assets/anttax/anttaxlogo.001.jpeg' width="66%">
     <img src='../../assets/anttax/anttaxlogo.002.jpeg' width="66%">
@@ -9,12 +15,7 @@
     <img src='../../assets/anttax/anttaxlogo.006.jpeg' width="66%">
     <img src='../../assets/anttax/anttaxlogo.007.jpeg' width="66%">
     <img src='../../assets/anttax/anttaxlogo.008.jpeg' width="66%">
-    <h3>Logo定稿</h3>
-    <img src='../../assets/anttax/logofix1.png' width="33%">
-    <br>
-    <img src='../../assets/anttax/logofix2.png' width="33%">
-    <br>
-    <img src='../../assets/anttax/logofix3.png' width="33%">
+
   </div>
 </template>
 

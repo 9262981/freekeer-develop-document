@@ -56,14 +56,26 @@ export default {
         }, {
           label: 'UI设计',
           urlName: 'UI',
-          children: [{
+          children: [
+            {
             label: 'Logo',
             urlName: 'Logo'
-          }]
+            },
+            {
+            label: '原型图',
+            urlName: 'Prototype'
+            },
+        ]
         },
         {
           label: '项目进度',
-          urlName: 'Schedule',
+          urlName: 'ScheduleV100',
+          children: [
+            {
+            label: 'Version1.0.0',
+            urlName: 'ScheduleV100'
+            },
+          ]
         },
         // {
         //   label: '一级 3',
@@ -224,6 +236,7 @@ body {
 }
 .el-container .routerview{
   width:100%;
+  margin:0 0 66px 0;
 }
 .el-container h3 {
   width: 100%;
