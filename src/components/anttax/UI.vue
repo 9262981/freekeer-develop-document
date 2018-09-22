@@ -1,6 +1,6 @@
 <template>
   <div class="routerview">
-    <h3>UI设计</h3>
+    <h3>UI设计-Version_1.0.0</h3>
     <h3>Logo定稿</h3>
     <img src='../../assets/anttax/logofix1.png' width="33%">
     <br>
@@ -21,7 +21,6 @@
 </template>
 
 <script>
-import Logo from '../../assets/logo.png';
 export default {
   name: 'UI',
 

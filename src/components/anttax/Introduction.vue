@@ -1,6 +1,6 @@
 <template>
   <div class="routerview">
-      <h3>项目简介</h3>
+      <h3>项目简介-Version_1.0.0</h3>
   </div>
 </template>
 

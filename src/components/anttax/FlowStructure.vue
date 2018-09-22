@@ -1,7 +1,8 @@
 <template>
   <div class="routerview">
-    <h3>流程结构</h3>
-    
+    <h3>流程结构-Version_1.0.0</h3>
+    <img src='../../assets/anttax/flowstructrue.jpg' width="100%">
+
   </div>
 </template>
 

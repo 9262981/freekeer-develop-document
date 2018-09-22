@@ -1,6 +1,6 @@
 <template>
   <div class="routerview">
-    <h3>项目进度-version.1.0.0</h3>
+    <h3>项目进度-Version_1.0.0</h3>
     <div style="height: 900px;">
       <el-steps direction="vertical" :active="6">
         <el-step title="LOGO确认" description="LOGO两版设计"></el-step>
@@ -21,7 +21,6 @@
 </template>
 
 <script>
-import Logo from '../../assets/logo.png';
 export default {
   name: 'ScheduleV100',
 
