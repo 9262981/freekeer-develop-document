@@ -1,19 +1,14 @@
 <template>
   <div class="routerview">
-  UI
-    <img :src="img">
-    <img src='../../assets/anttax/logo1.png' width="100%">
+      <h3>SEO官网文章发布注意事项 </h3>
   </div>
 </template>
 
 <script>
-import Logo from '../../assets/logo.png';
 export default {
-  name: 'UI',
-
+  name: 'NewsPublish',
   data() {
     return {
-      img:Logo
     }
   }
 }

@@ -9,19 +9,18 @@ import Logo from '@/components/anttax/Logo.vue'
 import Schedule from '@/components/anttax/Schedule.vue'
 
 // 附录
+import OrganizationChart from '@/components/appendix/organizationchart.vue'
 import AddressList from '@/components/appendix/AddressList.vue'
 import ApplyForReimbursement from '@/components/appendix/ApplyForReimbursement.vue'
 import RegulatoryRegime from '@/components/appendix/RegulatoryRegime.vue'
-import HelloWorld from '@/components/HelloWorld.vue'
 
 //a端操作
-import NewsPublish from '@/components/apannel/newspublish.vue'
+import NewsPublish from '@/components/apanel/newspublish.vue'
 
 Vue.use(VueRouter)
 
 const routes = [
   { path: '/',name: 'Introduction', component: Introduction },
-
 
   { path: '/anttax/introduction',name: 'Introduction', component: Introduction },
   { path: '/anttax/flowstructrue', name: 'FlowStructure',component: FlowStructure },
@@ -29,10 +28,9 @@ const routes = [
   { path: '/anttax/ui/logo', name: 'Logo',component: Logo },
   { path: '/anttax/ui/schedule', name: 'Schedule',component: Schedule },
 
+  { path: '/apanel/newspublish', name: 'NewsPublish',component: NewsPublish },
 
-  { path: '/apannel/newspublish', name: 'NewsPublish',component: NewsPublish },
-
-
+  { path: '/appendix/organizationchart', name: 'OrganizationChart',component: OrganizationChart },
   { path: '/appendix/addresslist', name: 'AddressList',component: AddressList },
   { path: '/appendix/applyforreimbursement', name: 'ApplyForReimbursement',component: ApplyForReimbursement },
   { path: '/appendix/regulatoryregime', name: 'RegulatoryRegime',component: RegulatoryRegime },

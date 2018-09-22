@@ -1,12 +1,13 @@
 <template>
-  <div class="hello">
-      a管理
+  <div class="routerview">
+      <h3>2018企业组织架构</h3>
+      <img src='../../assets/appendix/organizationchart.jpg' width="100%">
   </div>
 </template>
 
 <script>
 export default {
-  name: 'AddressList',
+  name: 'OrganizationChart',
   data() {
     return {
     }

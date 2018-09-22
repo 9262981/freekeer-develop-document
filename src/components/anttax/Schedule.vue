@@ -1,6 +1,6 @@
 <template>
-  <div class="hello">
-  Schedule
+  <div style="width:100%">
+  <h3>Schedule</h3>
   </div>
 </template>
 

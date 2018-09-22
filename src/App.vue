@@ -15,7 +15,7 @@
               </ul>
               <h4 style="margin:5px 0">管理A端操作:</h4>
               <ul style="padding:3px 0 0 -5px;">
-                <el-tree :data="Apannel" :props="defaultProps" @node-click="handleNodeClick" style="background:#F8F3E4"></el-tree>
+                <el-tree :data="Apanel" :props="defaultProps" @node-click="handleNodeClick" style="background:#F8F3E4"></el-tree>
               </ul>
               <h4 style="margin:5px 0">附件:</h4>
               <ul style="padding:3px 0 0 -5px;">
@@ -81,14 +81,17 @@ export default {
         // }
       ],
       ////////A端管理////////////
-      Apannel: [{
+      Apanel: [{
         label: 'SEO官网文章发布注意事项',
-        urlName: 'newspublish'
+        urlName: 'NewsPublish'
       }, ],
 
 
       ////////附录////////////
       Appendix: [{
+        label: '2018企业架构图',
+        urlName: 'OrganizationChart'
+      }, {
         label: '2018管理制度',
         urlName: 'RegulatoryRegime'
       }, {
@@ -97,7 +100,7 @@ export default {
       }, {
         label: '2018公司费用报销管理制度',
         urlName: 'ApplyForReimbursement'
-      }],
+      }, ],
 
       //
       defaultProps: {
@@ -218,5 +221,19 @@ body {
   width: 100%;
   border-top: 1px solid #ddd;
   height: 33px;
+}
+.el-container .routerview{
+  width:100%;
+}
+.el-container h3 {
+  width: 100%;
+  display: block;
+  font-size: 1.17em;
+  line-height: 2em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding-left: 12px;
+  padding-right: 12px;
+  background-color: #eaeaea;
 }
 </style>
