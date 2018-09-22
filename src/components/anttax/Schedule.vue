@@ -1,8 +1,6 @@
 <template>
   <div class="hello">
-  UI
-    <img :src="img">
-    <img src='../../assets/anttax/logo1.png' width="100%">
+  Schedule
   </div>
 </template>
 

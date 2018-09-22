@@ -1,19 +1,14 @@
 <template>
   <div class="hello">
-  UI
-    <img :src="img">
-    <img src='../../assets/anttax/logo1.png' width="100%">
+      a管理
   </div>
 </template>
 
 <script>
-import Logo from '../../assets/logo.png';
 export default {
-  name: 'Schedule',
-
+  name: 'AddressList',
   data() {
     return {
-      img:Logo
     }
   }
 }

@@ -3,42 +3,33 @@
   <el-container style="height:100%">
     <el-header height="69px">
       <img alt="FreekeerDevelopDocument-自由职客开发文档" src="./assets/logofreekeer.png" class="logoimg">
-
-      </el-header>
+    </el-header>
+    <el-container>
+      <el-aside width="288px" style="z-index:99999;margin-top:-1px;">
+        <div id="mainLeft" class="noprint">
+          <nav>
+            <div>
+              <h4 style="margin:0">蚂蚁税服</h4>
+              <ul style="padding:3px 0 0 -5px;">
+                <el-tree :data="anttax" :props="defaultProps" @node-click="handleNodeClick" style="background:#F8F3E4"></el-tree>
+              </ul>
+              <h4 style="margin:5px 0">管理A端操作:</h4>
+              <ul style="padding:3px 0 0 -5px;">
+                <el-tree :data="Apannel" :props="defaultProps" @node-click="handleNodeClick" style="background:#F8F3E4"></el-tree>
+              </ul>
+              <h4 style="margin:5px 0">附件:</h4>
+              <ul style="padding:3px 0 0 -5px;">
+                <el-tree :data="Appendix" :props="defaultProps" @node-click="handleNodeClick" style="background:#F8F3E4"></el-tree>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </el-aside>
       <el-container>
-        <el-aside width="288px" style="z-index:99999;margin-top:-1px;">
-            <div id="mainLeft" class="noprint">
-                <nav>
-                  <div>
-                    <h4 style="margin:0">蚂蚁税服</h4>
-                    <ul style="padding:3px 0 0 -5px;">
-                     <!-- <li><router-link to="/HelloWorld">Go to Foo</router-link></li> -->
-
-                      <el-tree :data="anttax" :props="defaultProps" @node-click="handleNodeClick" style="background:#F8F3E4"></el-tree>
-                    </ul>
-                    <h4 style="margin:5px 0">管理A端操作:</h4>
-                    <ul style="padding:3px 0 0 -5px;">
-                     <!-- <li><router-link to="/HelloWorld">Go to Foo</router-link></li> -->
-
-                      <el-tree :data="Apannel" :props="defaultProps" @node-click="handleNodeClick" style="background:#F8F3E4"></el-tree>
-                    </ul>
-                    <h4 style="margin:5px 0">附件:</h4>
-                    <ul style="padding:3px 0 0 -5px;">
-                     <!-- <li><router-link to="/HelloWorld">Go to Foo</router-link></li> -->
-
-                      <el-tree :data="Appendix" :props="defaultProps" @node-click="handleNodeClick" style="background:#F8F3E4"></el-tree>
-                    </ul>
-                  </div>
-
-                </nav>
-              </div>
-        </el-aside>
-        <el-container>
-          <!-- <el-main><HelloWorld /></el-main> -->
-          <router-view style="padding:33px;"></router-view>
-        </el-container>
+        <router-view style="padding:28px 66px;"></router-view>
       </el-container>
-      <el-footer height="39px">Copyright © 2018贵州自由客网络技术有限公司版权所有 黔ICP备16000950号</el-footer>
+    </el-container>
+    <el-footer height="39px" style="background:rgba(255,255,255,0.8)">Copyright © 2018贵州自由客网络技术有限公司版权所有 黔ICP备16000950号</el-footer>
 
   </el-container>
 
@@ -55,67 +46,60 @@ export default {
   },
   data() {
     return {
-      anttax:[{
-        label: '项目简介',
-        urlName:'Introduction'
-      },{
-        label: '流程结构',
-        urlName:'FlowStructure'
-      },{
-        label: 'UI设计',
-        urlName:'UI',
-        children: [{
-            label: 'Logo',
-            urlName:'Logo'}]
-      },
-      // {
-      //   label: '一级 2',
-      //   children: [{
-      //     label: '二级 2-1',
-      //     children: [{
-      //       label: '三级 2-1-1'
-      //     }]
-      //   }, {
-      //     label: '二级 2-2',
-      //     children: [{
-      //       label: '三级 2-2-1'
-      //     }]
-      //   }]
-      // },
-      {
-        label: '一级 3',
-        children: [{
-          label: '二级 3-1',
-          children: [{
-            label: '三级 3-1-1'
-          }]
+      ////////蚂蚁税服////////////
+      anttax: [{
+          label: '项目简介',
+          urlName: 'Introduction'
         }, {
-          label: '二级 3-2',
+          label: '流程结构',
+          urlName: 'FlowStructure'
+        }, {
+          label: 'UI设计',
+          urlName: 'UI',
           children: [{
-            label: '三级 3-2-1'
+            label: 'Logo',
+            urlName: 'Logo'
           }]
-        }]
-      }],
-      Apannel:[{
+        },
+        {
+          label: '项目进度',
+          urlName: 'Schedule',
+        },
+        // {
+        //   label: '一级 3',
+        //   children: [{
+        //     label: '二级 3-1',
+        //     children: [{
+        //       label: '三级 3-1-1'
+        //     }]
+        //   }, {
+        //     label: '二级 3-2',
+        //     children: [{
+        //       label: '三级 3-2-1'
+        //     }]
+        //   }]
+        // }
+      ],
+      ////////A端管理////////////
+      Apannel: [{
         label: 'SEO官网文章发布注意事项',
-        urlName:'newspublish'
-      },{
-        label: '流程结构',
-        urlName:'FlowStructure'
-      },{
-        label: 'UI原型',
-        urlName:'UI'
+        urlName: 'newspublish'
+      }, ],
+
+
+      ////////附录////////////
+      Appendix: [{
+        label: '2018管理制度',
+        urlName: 'RegulatoryRegime'
+      }, {
+        label: '2018员工通讯录',
+        urlName: 'AddressList'
+      }, {
+        label: '2018公司费用报销管理制度',
+        urlName: 'ApplyForReimbursement'
       }],
-      Appendix:[{
-        label: 'SEO官网文章发布注意事项',
-        urlName:'newspublish'
-      },{
-        label: '流程结构',
-        urlName:'FlowStructure'
-      },{
-        label: 'UI原型',
-        urlName:'UI'
-      }],
+
+      //
       defaultProps: {
         children: 'children',
         label: 'label'
@@ -123,19 +107,19 @@ export default {
     }
   },
   methods: {
-      handleOpen(key, keyPath) {
-        console.log(key, keyPath);
-      },
-      handleClose(key, keyPath) {
-        console.log(key, keyPath);
-      },
-      handleNodeClick(data) {
-        this.$router.push({
-          name: data.urlName
-        });
+    handleOpen(key, keyPath) {
+      console.log(key, keyPath);
+    },
+    handleClose(key, keyPath) {
+      console.log(key, keyPath);
+    },
+    handleNodeClick(data) {
+      this.$router.push({
+        name: data.urlName
+      });
 
-      }
     }
+  }
 }
 </script>
 
@@ -144,7 +128,7 @@ export default {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
+  /* text-align: center; */
   color: #2c3e50;
 }
 
@@ -157,8 +141,6 @@ body {
   margin: 0;
   padding: 0;
 }
-
-
 
 .el-header {
   background-color: #F8F3E4;
@@ -180,7 +162,7 @@ body {
   width: 160px;
   height: 33px;
   margin-top: 18px;
-  margin-right:18px;
+  margin-right: 18px;
 }
 
 #mainLeft {
@@ -198,22 +180,26 @@ body {
   border-bottom: 1px solid #bbb;
   border-bottom-right-radius: 20px;
   z-index: 99999;
-  border-top:1px solid #F8F3E4;
+  border-top: 1px solid #F8F3E4;
 }
-#mainLeft  ul {
+
+#mainLeft ul {
   font-size: 1px;
 
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
 }
-#mainLeft  li {
-    display: list-item;
-    text-align: -webkit-match-parent;
+
+#mainLeft li {
+  display: list-item;
+  text-align: -webkit-match-parent;
 }
-#mainLeft  a{
-    text-decoration: none
+
+#mainLeft a {
+  text-decoration: none
 }
+
 .el-main {
   color: #333;
   text-align: center;
