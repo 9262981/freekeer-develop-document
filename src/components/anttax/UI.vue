@@ -16,7 +16,6 @@
     <img src='../../assets/anttax/anttaxlogo.006.jpeg' width="66%">
     <img src='../../assets/anttax/anttaxlogo.007.jpeg' width="66%">
     <img src='../../assets/anttax/anttaxlogo.008.jpeg' width="66%">
-
   </div>
 </template>
 
