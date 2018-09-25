@@ -10,7 +10,7 @@
         <el-step title="会员登录" description="前台制作完成-后台制作完成"></el-step>
         <el-step title="订单流程" description="前台制作完成-后台制作完成"></el-step>
 
-        <el-step title="付款后台申请" description="服务号支付接口申请/未完成"></el-step>
+        <el-step title="微信申请-支付接口申请" description="服务号支付接口申请/未完成"></el-step>
         <el-step title="支付接口未调试" description="需要通过支付接口申请"></el-step>
         <el-step title="购物整套流程" description="购物整套流程前端制作未完成-购物整套流程后端制作未完成"></el-step>
         <el-step title="支付整套流程测试" description="多渠道-多人测试"></el-step>
@@ -26,7 +26,6 @@ export default {
 
   data() {
     return {
-      img:Logo
     }
   }
 }

@@ -23,7 +23,7 @@ import NewsPublish from '@/components/apanel/newspublish.vue'
 Vue.use(VueRouter)
 
 const routes = [
-  { path: '/',name: 'Introduction', component: Introduction },
+  { path: '/',name: 'Introduct', component: Introduction },
 
   { path: '/anttax/introduction',name: 'Introduction', component: Introduction },
   { path: '/anttax/flowstructrue', name: 'FlowStructure',component: FlowStructure },
