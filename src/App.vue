@@ -76,6 +76,10 @@ export default {
             },
           ]
         },
+        {
+            label: '微信支付文档',
+            urlName: 'PayDevelop'
+          },
         // {
         //   label: '一级 3',
         //   children: [{

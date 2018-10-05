@@ -10,6 +10,7 @@ import Logo from '@/components/anttax/Logo.vue'
 import Prototype from '@/components/anttax/prototype.vue'
 
 import ScheduleV100 from '@/components/anttax/Schedule_v100.vue'
+import PayDevelop from '@/components/anttax/PayDevelop.vue'
 
 // 附录
 import OrganizationChart from '@/components/appendix/organizationchart.vue'
@@ -33,6 +34,7 @@ const routes = [
   { path: '/anttax/ui/logo', name: 'Logo',component: Logo },
   { path: '/anttax/ui/prototype', name: 'Prototype',component: Prototype },
   { path: '/anttax/schedule_v100', name: 'ScheduleV100',component: ScheduleV100 },
+  { path: '/anttax/paydevelop', name: 'PayDevelop',component: PayDevelop },
 
   { path: '/apanel/newspublish', name: 'NewsPublish',component: NewsPublish },
   { path: '/apanel/newsstyle', name: 'NewsStyle',component: NewsStyle },
