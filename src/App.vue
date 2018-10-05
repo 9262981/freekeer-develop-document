@@ -93,8 +93,18 @@ export default {
       ],
       ////////A端管理////////////
       Apanel: [{
-        label: 'SEO官网文章发布注意事项',
-        urlName: 'NewsPublish'
+        label: 'SEO官网文章发布',
+        urlName: 'NewsPublish',
+        children: [
+          {
+          label: '文章样式错位问题',
+          urlName: 'NewsStyle'
+          },
+          {
+            label: '伪原创文章发布及注意事项',
+            urlName: 'NewsWei'
+          }
+        ]
       }, ],
 
 

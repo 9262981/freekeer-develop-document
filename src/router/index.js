@@ -19,6 +19,8 @@ import RegulatoryRegime from '@/components/appendix/RegulatoryRegime.vue'
 
 //a端操作
 import NewsPublish from '@/components/apanel/newspublish.vue'
+import NewsStyle from '@/components/apanel/newsstyle.vue'
+import NewsWei from '@/components/apanel/newswei.vue'
 
 Vue.use(VueRouter)
 
@@ -33,6 +35,8 @@ const routes = [
   { path: '/anttax/schedule_v100', name: 'ScheduleV100',component: ScheduleV100 },
 
   { path: '/apanel/newspublish', name: 'NewsPublish',component: NewsPublish },
+  { path: '/apanel/newsstyle', name: 'NewsStyle',component: NewsStyle },
+  { path: '/apanel/newswei', name: 'NewsWei',component: NewsWei },
 
   { path: '/appendix/organizationchart', name: 'OrganizationChart',component: OrganizationChart },
   { path: '/appendix/addresslist', name: 'AddressList',component: AddressList },
