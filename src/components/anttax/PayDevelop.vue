@@ -14,6 +14,7 @@
       <a href="https://pay.weixin.qq.com/wiki/doc/api/jsapi.php?chapter=23_1" target="_blank">支付验收指引</a>
       <br><br>
       <a href="https://pay.weixin.qq.com/wiki/doc/api/jsapi.php?chapter=10_4" target="_blank">HTTPS服务器配置</a><br>
+      <a href="https://pay.weixin.qq.com/wiki/doc/api/jsapi.php?chapter=11_1" target="_blank">JAVA/PHP/.NET:DEMO</a><br>
     </el-tab-pane>
 
     <el-tab-pane label="腾讯客服" name="second">
