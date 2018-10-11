@@ -1,6 +1,6 @@
 <template>
   <div class="routerview">
-      <h3>A端banner 发布及管理使用步骤 </h3>
+      <h3>A端banner发布注意事项</h3>
       <p>Banner大小</p>
       <p><img src='../../assets/apanel/banner1.png' width="95%"></p>
 

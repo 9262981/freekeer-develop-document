@@ -110,7 +110,7 @@ export default {
           }
         ]
       },{
-        label: 'A端Banner发布注意事项',
+        label: 'A端banner发布注意事项',
         urlName: 'BannerPublish'
       },{
         label: '做订单查询不到注册用户',
