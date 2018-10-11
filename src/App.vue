@@ -109,6 +109,12 @@ export default {
             urlName: 'NewsWei'
           }
         ]
+      },{
+        label: 'A端Banner发布注意事项',
+        urlName: 'BannerPublish'
+      },{
+        label: '做订单查询不到注册用户',
+        urlName: 'PersonNotFind'
       }, ],
 
 

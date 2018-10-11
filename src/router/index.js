@@ -22,6 +22,8 @@ import RegulatoryRegime from '@/components/appendix/RegulatoryRegime.vue'
 import NewsPublish from '@/components/apanel/newspublish.vue'
 import NewsStyle from '@/components/apanel/newsstyle.vue'
 import NewsWei from '@/components/apanel/newswei.vue'
+import BannerPublish from '@/components/apanel/bannerpublish.vue'
+import PersonNotFind from '@/components/apanel/personnotfind.vue'
 
 Vue.use(VueRouter)
 
@@ -39,6 +41,8 @@ const routes = [
   { path: '/apanel/newspublish', name: 'NewsPublish',component: NewsPublish },
   { path: '/apanel/newsstyle', name: 'NewsStyle',component: NewsStyle },
   { path: '/apanel/newswei', name: 'NewsWei',component: NewsWei },
+  { path: '/apanel/bannerpublish', name: 'BannerPublish',component: BannerPublish },
+  { path: '/apanel/personnotfind', name: 'PersonNotFind',component: PersonNotFind },
 
   { path: '/appendix/organizationchart', name: 'OrganizationChart',component: OrganizationChart },
   { path: '/appendix/addresslist', name: 'AddressList',component: AddressList },

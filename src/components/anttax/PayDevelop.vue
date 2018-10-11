@@ -29,7 +29,6 @@
 
     <el-tab-pane label="第三方" name="fouth">
       <a href="https://blog.csdn.net/paymm/article/details/78184317" target="_blank">微信公众号支付开发-JAVA版DEMO</a><br>
-      <a href="https://blog.csdn.net/paymm/article/details/78184317" target="_blank">微信公众号支付开发-JAVA版DEMO</a><br>
       <a href="https://blog.csdn.net/programerxiaoer/article/details/78154902" target="_blank">微信公众号支付开发流程与避坑手册-Java篇</a><br>
 
     </el-tab-pane>
