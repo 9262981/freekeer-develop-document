@@ -4,12 +4,16 @@
     <el-header>
       <div class="logoimg">
         <a href="./doc">
-          <img alt="FreekeerDevelopDocument-自由职客开发文档" src="./assets/logofreekeer.png" class="logoimg">
+          <img alt="FreekeerDevelopDocument-自由职客开发文档" src="./assets/logofreekeer.png" style="width:120px;">
         </a>
+
       </div>
+      <span class="el-button-show">
+        <i class="el-icon-menu" @click="handleMedia"></i>
+      </span>
     </el-header>
     <el-container>
-      <el-aside style="width:233px;z-index:99999;margin-top:-1px;">
+      <el-aside id="elaside" style="width:233px;z-index:99999;margin-top:-1px;">
         <div id="mainLeft" class="noprint">
           <nav>
             <div>
@@ -49,6 +53,7 @@ export default {
   },
   data() {
     return {
+      show: true,
       ////////蚂蚁税服////////////
       anttax: [{
           label: '项目简介',
@@ -150,7 +155,13 @@ export default {
       this.$router.push({
         name: data.urlName
       });
-
+    },
+    handleMedia(data){
+      if(document.getElementById('elaside').style.display!='block'){
+        document.getElementById('elaside').style.display='block';
+      }else{
+        document.getElementById('elaside').style.display='none';
+      }
     }
   }
 }
@@ -185,17 +196,22 @@ body {
   font-weight: 900;
   color: #333;
   text-align: left;
-  line-height: 69px;
   border-bottom: 1px solid #bbb;
   box-shadow: 0 0 7px #aaa;
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+  align-items:center;
 }
 
 .logoimg {
   width: 120px;
   height: 29px;
-  margin-top: 1px;
 }
-
+.el-button-show{
+  float:right;
+  display:none;
+}
 #mainLeft {
   background-color: #F8F3E4;
   color: #333;
@@ -271,7 +287,7 @@ body {
   .el-container h3 {
       width: 100%;
       padding:0px;
-      margin:0px;
+      margin:0 0 21px 0;
       display: block;
       font-size: 1.17em;
       line-height: 2em;
@@ -283,6 +299,9 @@ body {
   }
   .el-aside{
     display:none
+  }
+  .el-button-show{
+    display:block
   }
   .el-container .routerview{
     width:100%;
@@ -296,7 +315,7 @@ body {
   .el-container h3 {
       width: 100%;
       padding:0px;
-      margin:0px;
+      margin:0 0 21px 0;
       display: block;
       font-size: 1.17em;
       line-height: 2em;
@@ -308,6 +327,9 @@ body {
   }
   .el-aside{
     display:none
+  }
+  .el-button-show{
+    display:block
   }
   .el-container .routerview{
     width:100%;
