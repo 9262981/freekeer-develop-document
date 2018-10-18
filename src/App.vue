@@ -1,11 +1,15 @@
 <template style="height:100%">
 <div id="app" style="height:100%">
   <el-container style="height:100%">
-    <el-header height="69px">
-      <img alt="FreekeerDevelopDocument-自由职客开发文档" src="./assets/logofreekeer.png" class="logoimg">
+    <el-header>
+      <div class="logoimg">
+        <a href="./doc">
+          <img alt="FreekeerDevelopDocument-自由职客开发文档" src="./assets/logofreekeer.png" class="logoimg">
+        </a>
+      </div>
     </el-header>
     <el-container>
-      <el-aside width="288px" style="z-index:99999;margin-top:-1px;">
+      <el-aside style="width:233px;z-index:99999;margin-top:-1px;">
         <div id="mainLeft" class="noprint">
           <nav>
             <div>
@@ -26,7 +30,7 @@
         </div>
       </el-aside>
       <el-container>
-        <router-view style="padding:28px 66px;"></router-view>
+        <router-view></router-view>
       </el-container>
     </el-container>
     <el-footer height="39px" style="background:rgba(255,255,255,0.8)">Copyright © 2018贵州自由客网络技术有限公司版权所有 黔ICP备16000950号</el-footer>
@@ -182,16 +186,14 @@ body {
   color: #333;
   text-align: left;
   line-height: 69px;
-
   border-bottom: 1px solid #bbb;
   box-shadow: 0 0 7px #aaa;
 }
 
 .logoimg {
-  width: 160px;
-  height: 33px;
-  margin-top: 18px;
-  margin-right: 18px;
+  width: 120px;
+  height: 29px;
+  margin-top: 1px;
 }
 
 #mainLeft {
@@ -251,6 +253,7 @@ body {
 .el-container .routerview{
   width:100%;
   margin:0 0 66px 0;
+  padding:21px 39px;
 }
 .el-container h3 {
   width: 100%;
@@ -262,5 +265,84 @@ body {
   padding-left: 12px;
   padding-right: 12px;
   background-color: #eaeaea;
+}
+
+@media (max-width: 575.98px) {
+  .el-container h3 {
+      width: 100%;
+      padding:0px;
+      margin:0px;
+      display: block;
+      font-size: 1.17em;
+      line-height: 2em;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      padding-right: 0;
+      background-color: #eaeaea;
+      text-align: center;
+  }
+  .el-aside{
+    display:none
+  }
+  .el-container .routerview{
+    width:100%;
+    margin:0 0 6px 0;
+    padding:28px 21px;
+  }
+}
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .el-container h3 {
+      width: 100%;
+      padding:0px;
+      margin:0px;
+      display: block;
+      font-size: 1.17em;
+      line-height: 2em;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      padding-right: 0;
+      background-color: #eaeaea;
+      text-align: center;
+  }
+  .el-aside{
+    display:none
+  }
+  .el-container .routerview{
+    width:100%;
+    margin:0 0 6px 0;
+    padding:28px ;
+  }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+  .el-container .routerview{
+    width:100%;
+    margin:0 0 6px 0;
+    padding:28px 33px;
+  }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+  .el-container .routerview{
+    width:100%;
+    margin:0 0 6px 0;
+    padding:28px 66px;
+  }
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+  .el-container .routerview{
+    width:100%;
+    margin:0 0 6px 0;
+    padding:28px 66px;
+  }
 }
 </style>
