@@ -2,12 +2,12 @@
   <div class="routerview">
     <h3>原型图确认-Version_1.0.0</h3>
 
-    <img src='../../assets/anttax/prototype05.jpg' width="45%">
-    <img src='../../assets/anttax/prototype06.jpg' width="45%">
-    <img src='../../assets/anttax/prototype07.jpg' width="45%">
-    <img src='../../assets/anttax/prototype08.jpg' width="45%">
-    <img src='../../assets/anttax/prototype02.png' width="45%">
-    <img src='../../assets/anttax/prototype03.png' width="45%">
+    <img src='../../assets/anttax/prototype05.jpg' width="45%" preview="1" preview-text="">
+    <img src='../../assets/anttax/prototype06.jpg' width="45%" preview="1" preview-text="">
+    <img src='../../assets/anttax/prototype07.jpg' width="45%" preview="1" preview-text="">
+    <img src='../../assets/anttax/prototype08.jpg' width="45%" preview="1" preview-text="">
+    <img src='../../assets/anttax/prototype02.png' width="45%" preview="1" preview-text="">
+    <img src='../../assets/anttax/prototype03.png' width="45%" preview="1" preview-text="">
   </div>
 </template>
 

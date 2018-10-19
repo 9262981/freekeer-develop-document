@@ -37,7 +37,7 @@
         <router-view></router-view>
       </el-container>
     </el-container>
-    <el-footer height="39px" style="background:rgba(255,255,255,0.8)">Copyright © 2018贵州自由客网络技术有限公司版权所有 黔ICP备16000950号</el-footer>
+    <el-footer height="39px" style="background:rgba(255,255,255,0.8)">Copyright © 2018贵州自由客网络技术有限公司版权所有<br>黔ICP备16000950号</el-footer>
 
   </el-container>
 
@@ -45,7 +45,6 @@
 </template>
 
 <script>
-
 export default {
   name: 'app',
   components: {
@@ -156,7 +155,7 @@ export default {
         name: data.urlName
       });
     },
-    handleMedia(data){
+    handleMedia(){
       if(document.getElementById('elaside').style.display!='block'){
         document.getElementById('elaside').style.display='block';
       }else{
@@ -210,7 +209,7 @@ body {
 }
 .el-button-show{
   float:right;
-  display:none;
+  /* display:none; */
 }
 #mainLeft {
   background-color: #F8F3E4;
