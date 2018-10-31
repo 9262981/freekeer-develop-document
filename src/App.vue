@@ -3,7 +3,7 @@
   <el-container style="height:100%">
     <el-header>
       <div class="logoimg">
-        <a href="./doc">
+        <a href="http://www.freekeer.com/doc">
           <img alt="FreekeerDevelopDocument-自由职客开发文档" src="./assets/logofreekeer.png" style="width:120px;">
         </a>
 
@@ -13,7 +13,7 @@
       </span>
     </el-header>
     <el-container>
-      <el-aside id="elaside" style="width:233px;z-index:99999;margin-top:-1px;">
+      <el-aside id="elaside" style="width:233px;z-index:99;margin-top:-1px;">
         <div id="mainLeft" class="noprint">
           <nav>
             <div>
@@ -37,7 +37,7 @@
         <router-view></router-view>
       </el-container>
     </el-container>
-    <el-footer height="39px" style="background:rgba(255,255,255,0.8)">Copyright © 2018贵州自由客网络技术有限公司版权所有<br>黔ICP备16000950号</el-footer>
+    <el-footer height="39px" width="100%" style="background:rgba(255,255,255,0.8)">Copyright © 2018贵州自由客网络技术有限公司版权所有<br>黔ICP备16000950号</el-footer>
 
   </el-container>
 
@@ -154,10 +154,14 @@ export default {
       this.$router.push({
         name: data.urlName
       });
+      if(document.documentElement.clientWidth<768){
+        document.getElementById("elaside").style.display="none";
+      }
     },
     handleMedia(){
       if(document.getElementById('elaside').style.display!='block'){
         document.getElementById('elaside').style.display='block';
+
       }else{
         document.getElementById('elaside').style.display='none';
       }
@@ -209,7 +213,7 @@ body {
 }
 .el-button-show{
   float:right;
-  /* display:none; */
+  display:block;
 }
 #mainLeft {
   background-color: #F8F3E4;
