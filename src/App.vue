@@ -46,48 +46,77 @@
 
 <script>
 export default {
-  name: 'app',
-  components: {
-
-  },
+  name: "app",
+  components: {},
   data() {
     return {
       show: true,
       ////////蚂蚁税服////////////
-      anttax: [{
-          label: '项目简介',
-          urlName: 'Introduction'
-        }, {
-          label: '流程结构',
-          urlName: 'FlowStructure'
-        }, {
-          label: 'UI设计',
-          urlName: '',
-          children: [
-            {
-            label: 'Logo',
-            urlName: 'Logo'
-            },
-            {
-            label: '原型图',
-            urlName: 'Prototype'
-            },
-        ]
+      anttax: [
+        {
+          label: "项目简介",
+          urlName: "Introduction"
         },
         {
-          label: '项目进度',
-          urlName: 'ScheduleV100',
+          label: "规划描述文档",
+          urlName: "Description",
           children: [
             {
-            label: 'Version1.0.0',
-            urlName: 'ScheduleV100'
+              label: "1.微信公众号",
+              urlName: "Description"
             },
+            {
+              label: "2.C端管理开票系统",
+              urlName: "Description"
+            },
+            {
+              label: "3.A端业务管理后台",
+              urlName: "Description"
+            },
+            {
+              label: "4.PC-Web官网",
+              urlName: "Description"
+            },
+            {
+              label: "5.大客户活动页面",
+              urlName: "Description"
+            }
+          ]
+        },
+        
+        {
+          label: "一期_微信公众号",
+          urlName: "ScheduleV100",
+          children: [
+            {
+              label: "Logo",
+              urlName: "Logo"
+            },
+            {
+              label: "流程图",
+              urlName: "FlowStructure1"
+            },
+            {
+              label: "原型图",
+              urlName: "Prototype1"
+            },
+            {
+              label: "项目进度",
+              urlName: "ScheduleV100"
+            }
           ]
         },
         {
-            label: '微信支付文档',
-            urlName: 'PayDevelop'
-          },
+          label: "参考文档",
+          urlName: "PayDevelop",
+
+          children: [
+            {
+              label: "微信支付文档",
+              urlName: "PayDevelop"
+            }
+          ]
+        }
         // {
         //   label: '一级 3',
         //   children: [{
@@ -104,75 +133,81 @@ export default {
         // }
       ],
       ////////A端管理////////////
-      Apanel: [{
-        label: 'SEO官网文章发布',
-        urlName: 'NewsPublish',
-        children: [
-          {
-          label: '文章样式错位问题',
-          urlName: 'NewsStyle'
-          },
-          {
-            label: '伪原创文章发布及注意事项',
-            urlName: 'NewsWei'
-          }
-        ]
-      },{
-        label: 'A端banner发布注意事项',
-        urlName: 'BannerPublish'
-      },{
-        label: '做订单查询不到注册用户',
-        urlName: 'PersonNotFind'
-      }, ],
-
+      Apanel: [
+        {
+          label: "SEO官网文章发布",
+          urlName: "NewsPublish",
+          children: [
+            {
+              label: "文章样式错位问题",
+              urlName: "NewsStyle"
+            },
+            {
+              label: "伪原创文章发布及注意事项",
+              urlName: "NewsWei"
+            }
+          ]
+        },
+        {
+          label: "A端banner发布注意事项",
+          urlName: "BannerPublish"
+        },
+        {
+          label: "做订单查询不到注册用户",
+          urlName: "PersonNotFind"
+        }
+      ],
 
       ////////附录////////////
-      Appendix: [{
-        label: '2018企业架构图',
-        urlName: 'OrganizationChart'
-      }, {
-        label: '2018管理制度',
-        urlName: 'RegulatoryRegime'
-      }, {
-        label: '2018员工通讯录',
-        urlName: 'AddressList'
-      }, {
-        label: '2018公司费用报销管理制度',
-        urlName: 'ApplyForReimbursement'
-      }, ],
+      Appendix: [
+        {
+          label: "2018企业架构图",
+          urlName: "OrganizationChart"
+        },
+        {
+          label: "2018管理制度",
+          urlName: "RegulatoryRegime"
+        },
+        {
+          label: "2018员工通讯录",
+          urlName: "AddressList"
+        },
+        {
+          label: "2018公司费用报销管理制度",
+          urlName: "ApplyForReimbursement"
+        }
+      ],
 
       //
       defaultProps: {
-        children: 'children',
-        label: 'label'
+        children: "children",
+        label: "label"
       }
-    }
+    };
   },
   methods: {
-
     handleNodeClick(data) {
       this.$router.push({
         name: data.urlName
       });
-      if(document.documentElement.clientWidth<768){
-        document.getElementById("elaside").style.display="none";
+      if (document.documentElement.clientWidth < 768) {
+        document.getElementById("elaside").style.display = "none";
       }
     },
-    handleMedia(){
-      if(document.getElementById('elaside').style.display!='block'){
-        document.getElementById('elaside').style.display='block';
-
-      }else{
-        document.getElementById('elaside').style.display='none';
+    handleMedia() {
+      if (document.getElementById("elaside").style.display != "block") {
+        document.getElementById("elaside").style.display = "block";
+      } else {
+        document.getElementById("elaside").style.display = "none";
       }
     }
   }
-}
+};
 </script>
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   /* text-align: center; */
@@ -190,8 +225,8 @@ body {
 }
 
 .el-header {
-  background-color: #F8F3E4;
-  background: linear-gradient(to bottom, #ffffff -10%, #F8F3E4 100%);
+  background-color: #f8f3e4;
+  background: linear-gradient(to bottom, #ffffff -10%, #f8f3e4 100%);
   /* box-shadow: 0 10px 60px 0 rgba(29, 29, 31, 0.07); */
   opacity: 0.98;
   color: #999;
@@ -201,22 +236,22 @@ body {
   text-align: left;
   border-bottom: 1px solid #bbb;
   box-shadow: 0 0 7px #aaa;
-  display:flex;
-  flex-direction:row;
-  justify-content:space-between;
-  align-items:center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logoimg {
   width: 120px;
   height: 29px;
 }
-.el-button-show{
-  float:right;
-  display:block;
+.el-button-show {
+  float: right;
+  display: block;
 }
 #mainLeft {
-  background-color: #F8F3E4;
+  background-color: #f8f3e4;
   color: #333;
   text-align: left;
   border-bottom-right-radius: 1.8rem;
@@ -225,12 +260,12 @@ body {
   padding-right: 14px;
   padding-top: 6px;
   padding-bottom: 15px;
-  background-color: #F8F3E4;
+  background-color: #f8f3e4;
   border-right: 1px solid #bbb;
   border-bottom: 1px solid #bbb;
   border-bottom-right-radius: 20px;
   z-index: 99999;
-  border-top: 1px solid #F8F3E4;
+  border-top: 1px solid #f8f3e4;
 }
 
 #mainLeft ul {
@@ -247,7 +282,7 @@ body {
 }
 
 #mainLeft a {
-  text-decoration: none
+  text-decoration: none;
 }
 
 .el-main {
@@ -262,17 +297,17 @@ body {
   color: #333;
   text-align: center;
   line-height: 39px;
-  font-size: .6rem;
+  font-size: 0.6rem;
   position: fixed;
   bottom: 0;
   width: 100%;
   border-top: 1px solid #ddd;
   height: 33px;
 }
-.el-container .routerview{
-  width:100%;
-  margin:0 0 66px 0;
-  padding:21px 39px;
+.el-container .routerview {
+  width: 100%;
+  margin: 0 0 66px 0;
+  padding: 21px 39px;
 }
 .el-container h3 {
   width: 100%;
@@ -288,86 +323,83 @@ body {
 
 @media (max-width: 575.98px) {
   .el-container h3 {
-      width: 100%;
-      padding:0px;
-      margin:0 0 21px 0;
-      display: block;
-      font-size: 1.17em;
-      line-height: 2em;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      padding-right: 0;
-      background-color: #eaeaea;
-      text-align: center;
+    width: 100%;
+    padding: 0px;
+    margin: 0 0 21px 0;
+    display: block;
+    font-size: 1.17em;
+    line-height: 2em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding-right: 0;
+    background-color: #eaeaea;
+    text-align: center;
   }
-  .el-aside{
-    display:none
+  .el-aside {
+    display: none;
   }
-  .el-button-show{
-    display:block
+  .el-button-show {
+    display: block;
   }
-  .el-container .routerview{
-    width:100%;
-    margin:0 0 6px 0;
-    padding:28px 21px;
+  .el-container .routerview {
+    width: 100%;
+    margin: 0 0 6px 0;
+    padding: 28px 21px;
   }
 }
 
 /* // Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
   .el-container h3 {
-      width: 100%;
-      padding:0px;
-      margin:0 0 21px 0;
-      display: block;
-      font-size: 1.17em;
-      line-height: 2em;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      padding-right: 0;
-      background-color: #eaeaea;
-      text-align: center;
+    width: 100%;
+    padding: 0px;
+    margin: 0 0 21px 0;
+    display: block;
+    font-size: 1.17em;
+    line-height: 2em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding-right: 0;
+    background-color: #eaeaea;
+    text-align: center;
   }
-  .el-aside{
-    display:none
+  .el-aside {
+    display: none;
   }
-  .el-button-show{
-    display:block
+  .el-button-show {
+    display: block;
   }
-  .el-container .routerview{
-    width:100%;
-    margin:0 0 6px 0;
-    padding:28px ;
+  .el-container .routerview {
+    width: 100%;
+    margin: 0 0 6px 0;
+    padding: 28px;
   }
 }
 
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) {
-
-  .el-container .routerview{
-    width:100%;
-    margin:0 0 6px 0;
-    padding:28px 33px;
+  .el-container .routerview {
+    width: 100%;
+    margin: 0 0 6px 0;
+    padding: 28px 33px;
   }
 }
 
 /* // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
-
-  .el-container .routerview{
-    width:100%;
-    margin:0 0 6px 0;
-    padding:28px 66px;
+  .el-container .routerview {
+    width: 100%;
+    margin: 0 0 6px 0;
+    padding: 28px 66px;
   }
 }
 
 /* // Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-
-  .el-container .routerview{
-    width:100%;
-    margin:0 0 6px 0;
-    padding:28px 66px;
+  .el-container .routerview {
+    width: 100%;
+    margin: 0 0 6px 0;
+    padding: 28px 66px;
   }
 }
 </style>
