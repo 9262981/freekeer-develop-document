@@ -15,6 +15,7 @@ import Prototype from '@/components/anttax/prototype.vue'
 import Prototype1 from '@/components/anttax/prototype1.vue'
 
 import ScheduleV100 from '@/components/anttax/Schedule_v100.vue'
+import DescriptionV100 from '@/components/anttax/descriptionv100.vue'
 import PayDevelop from '@/components/anttax/PayDevelop.vue'
 
 // 附录
@@ -48,6 +49,7 @@ const routes = [
 
 
   { path: '/anttax/schedule_v100', name: 'ScheduleV100',component: ScheduleV100 },
+  { path: '/anttax/descriptionv100', name: 'DescriptionV100',component: DescriptionV100 },
   { path: '/anttax/paydevelop', name: 'PayDevelop',component: PayDevelop },
 
   { path: '/apanel/newspublish', name: 'NewsPublish',component: NewsPublish },

@@ -13,7 +13,7 @@
       </span>
     </el-header>
     <el-container>
-      <el-aside id="elaside" style="width:233px;z-index:99;margin-top:-1px;">
+      <el-aside id="elaside" style="width:333px;z-index:99;margin-top:-1px;">
         <div id="mainLeft" class="noprint">
           <nav>
             <div>
@@ -86,7 +86,7 @@ export default {
         
         {
           label: "一期_微信公众号",
-          urlName: "ScheduleV100",
+          urlName: "DescriptionV100",
           children: [
             {
               label: "Logo",
@@ -401,5 +401,12 @@ body {
     margin: 0 0 6px 0;
     padding: 28px 66px;
   }
+}
+
+.h4{
+  color:rgb(32, 32, 32);
+  font-size:1.2rem;
+  border-bottom:1px solid #999;
+
 }
 </style>
