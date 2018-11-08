@@ -16,6 +16,10 @@ import Prototype1 from '@/components/anttax/prototype1.vue'
 
 import ScheduleV100 from '@/components/anttax/Schedule_v100.vue'
 import DescriptionV100 from '@/components/anttax/descriptionv100.vue'
+import DescriptionVC from '@/components/anttax/descriptionvc.vue'
+import DescriptionVA from '@/components/anttax/descriptionva.vue'
+import DescriptionVPC from '@/components/anttax/descriptionvpc.vue'
+import DescriptionVSP from '@/components/anttax/descriptionvsp.vue'
 import PayDevelop from '@/components/anttax/PayDevelop.vue'
 
 // 附录
@@ -50,6 +54,10 @@ const routes = [
 
   { path: '/anttax/schedule_v100', name: 'ScheduleV100',component: ScheduleV100 },
   { path: '/anttax/descriptionv100', name: 'DescriptionV100',component: DescriptionV100 },
+  { path: '/anttax/descriptionvc', name: 'DescriptionVC',component: DescriptionVC },
+  { path: '/anttax/descriptionva', name: 'DescriptionVA',component: DescriptionVA },
+  { path: '/anttax/descriptionvpc', name: 'DescriptionVPC',component: DescriptionVPC },
+  { path: '/anttax/descriptionvsp', name: 'DescriptionVSP',component: DescriptionVSP },
   { path: '/anttax/paydevelop', name: 'PayDevelop',component: PayDevelop },
 
   { path: '/apanel/newspublish', name: 'NewsPublish',component: NewsPublish },

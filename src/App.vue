@@ -63,23 +63,23 @@ export default {
           children: [
             {
               label: "1.微信公众号",
-              urlName: "Description"
+              urlName: "DescriptionV100"
             },
             {
               label: "2.C端管理开票系统",
-              urlName: "Description"
+              urlName: "DescriptionVC"
             },
             {
               label: "3.A端业务管理后台",
-              urlName: "Description"
+              urlName: "DescriptionVA"
             },
             {
               label: "4.PC-Web官网",
-              urlName: "Description"
+              urlName: "DescriptionVPC"
             },
             {
               label: "5.大客户活动页面",
-              urlName: "Description"
+              urlName: "DescriptionVSP"
             }
           ]
         },

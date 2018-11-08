@@ -1,6 +1,6 @@
 <template>
   <div class="routerview">
-    <h3>蚂蚁税服一期-微信公众号</h3>
+    <h3>aa蚂蚁税服一期-微信公众号</h3>
     <p class="h4">立项目的</p>
     蚂蚁税服公众号平台,以简洁友好的公众号形式推出,为了更好的的实现精准营销,数据分析以及快速的品牌传播.<br><br>
     1:精准营销<br>
@@ -64,7 +64,7 @@
 
 <script>
 export default {
-  name: "DescriptionV100",
+  name: "DescriptionVA",
 
   data() {
     return {};
