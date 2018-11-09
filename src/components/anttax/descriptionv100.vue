@@ -49,16 +49,16 @@
 
     <p class="h4">项目演示</p>
 
-     <img src='../../assets/anttax/v1/2.png' width="45%" preview="1" style="margin:2%;border:1px solid blue" preview-text="项目首页">
-      <img src='../../assets/anttax/v1/3.png' width="45%" preview="1" style="margin:2%;border:1px solid blue" preview-text="节税场景介绍">
-      <img src='../../assets/anttax/v1/4.png' width="45%" preview="1" style="margin:2%;border:1px solid blue" preview-text="公众号分享">
-      <img src='../../assets/anttax/v1/9.png' width="45%" preview="1" style="margin:2%;border:1px solid blue" preview-text="公众号分享">
+     <img src='../../assets/anttax/v1/2.png' width="28%" preview="1" style="margin:2%;border:1px solid blue" preview-text="项目首页">
+      <img src='../../assets/anttax/v1/3.png' width="28%" preview="1" style="margin:2%;border:1px solid blue" preview-text="节税场景介绍">
+      <img src='../../assets/anttax/v1/4.png' width="28%" preview="1" style="margin:2%;border:1px solid blue" preview-text="公众号分享">
+      <img src='../../assets/anttax/v1/9.png' width="28%" preview="1" style="margin:2%;border:1px solid blue" preview-text="公众号分享">
 
-      <img src='../../assets/anttax/v1/5.png' width="45%" preview="1" style="margin:2%;border:1px solid blue" preview-text="节税产品介绍">
-      <img src='../../assets/anttax/v1/6.png' width="45%" preview="1" style="margin:2%;border:1px solid blue" preview-text="节税产品介绍">
-      <img src='../../assets/anttax/v1/7.png' width="45%" preview="1" style="margin:2%;border:1px solid blue" preview-text="企业背景介绍">
-      <img src='../../assets/anttax/v1/8.png' width="45%" preview="1" style="margin:2%;border:1px solid blue" preview-text="产品购买订单">
-      <img src='../../assets/anttax/v1/10.png' width="45%" preview="1" style="margin:2%;border:1px solid blue" preview-text="产品支付流程">
+      <img src='../../assets/anttax/v1/5.png' width="28%" preview="1" style="margin:2%;border:1px solid blue" preview-text="节税产品介绍">
+      <img src='../../assets/anttax/v1/6.png' width="28%" preview="1" style="margin:2%;border:1px solid blue" preview-text="节税产品介绍">
+      <img src='../../assets/anttax/v1/7.png' width="28%" preview="1" style="margin:2%;border:1px solid blue" preview-text="企业背景介绍">
+      <img src='../../assets/anttax/v1/8.png' width="28%" preview="1" style="margin:2%;border:1px solid blue" preview-text="产品购买订单">
+      <img src='../../assets/anttax/v1/10.png' width="28%" preview="1" style="margin:2%;border:1px solid blue" preview-text="产品支付流程">
   </div>
 </template>
 
