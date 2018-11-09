@@ -62,7 +62,7 @@ export default {
           urlName: "Description",
           children: [
             {
-              label: "1.微信公众号",
+              label: "1.微信公众号(一期)",
               urlName: "DescriptionV100"
             },
             {
