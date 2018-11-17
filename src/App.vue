@@ -37,7 +37,7 @@
         <router-view></router-view>
       </el-container>
     </el-container>
-    <el-footer height="39px" width="100%" style="background:rgba(255,255,255,0.8)">Copyright © 2018贵州自由客网络技术有限公司版权所有<br>黔ICP备16000950号</el-footer>
+    <el-footer height="39px" width="100%" style="background:rgba(255,255,255,0.8)">Copyright © 2018贵州自由客网络技术有限公司版权所有-黔ICP备16000950号</el-footer>
 
   </el-container>
 
@@ -175,6 +175,10 @@ export default {
         {
           label: "2018公司费用报销管理制度",
           urlName: "ApplyForReimbursement"
+        },
+        {
+          label: "自由职客竞品分析",
+          urlName: "Competitive"
         }
       ],
 
@@ -343,7 +347,7 @@ body {
   }
   .el-container .routerview {
     width: 100%;
-    margin: 0 0 6px 0;
+    margin: 0 0 33px 0;
     padding: 28px 21px;
   }
 }
@@ -371,7 +375,7 @@ body {
   }
   .el-container .routerview {
     width: 100%;
-    margin: 0 0 6px 0;
+    margin: 0 0 33px 0;
     padding: 28px;
   }
 }
@@ -380,7 +384,7 @@ body {
 @media (min-width: 768px) and (max-width: 991.98px) {
   .el-container .routerview {
     width: 100%;
-    margin: 0 0 6px 0;
+    margin: 0 0 66px 0;
     padding: 28px 33px;
   }
 }
@@ -389,7 +393,7 @@ body {
 @media (min-width: 992px) and (max-width: 1199.98px) {
   .el-container .routerview {
     width: 100%;
-    margin: 0 0 6px 0;
+    margin: 0 0 66px 0;
     padding: 28px 66px;
   }
 }
@@ -398,7 +402,7 @@ body {
 @media (min-width: 1200px) {
   .el-container .routerview {
     width: 100%;
-    margin: 0 0 6px 0;
+    margin: 0 0 66px 0;
     padding: 28px 66px;
   }
 }

@@ -27,6 +27,7 @@ import OrganizationChart from '@/components/appendix/organizationchart.vue'
 import AddressList from '@/components/appendix/AddressList.vue'
 import ApplyForReimbursement from '@/components/appendix/ApplyForReimbursement.vue'
 import RegulatoryRegime from '@/components/appendix/RegulatoryRegime.vue'
+import Competitive from '@/components/appendix/Competitive.vue'
 
 //a端操作
 import NewsPublish from '@/components/apanel/newspublish.vue'
@@ -70,6 +71,7 @@ const routes = [
   { path: '/appendix/addresslist', name: 'AddressList',component: AddressList },
   { path: '/appendix/applyforreimbursement', name: 'ApplyForReimbursement',component: ApplyForReimbursement },
   { path: '/appendix/regulatoryregime', name: 'RegulatoryRegime',component: RegulatoryRegime },
+  { path: '/appendix/competitive', name: 'Competitive',component: Competitive },
 ]
 
 export default new VueRouter({
