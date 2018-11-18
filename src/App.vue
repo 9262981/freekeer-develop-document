@@ -200,10 +200,10 @@ export default {
           label: "2018公司费用报销管理制度",
           urlName: "ApplyForReimbursement"
         },
-        {
-          label: "自由职客竞品分析",
-          urlName: "Competitive"
-        }
+        // {
+        //   label: "自由职客竞品分析",
+        //   urlName: "Competitive"
+        // }
       ],
 
       //
