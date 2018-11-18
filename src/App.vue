@@ -19,15 +19,32 @@
             <div>
               <h4 style="margin:0">蚂蚁税服</h4>
               <ul style="padding:3px 0 0 -5px;">
-                <el-tree :data="anttax" :props="defaultProps" @node-click="handleNodeClick" style="background:#F8F3E4"></el-tree>
+                <el-tree 
+                  :data="anttax" 
+                  :props="defaultProps" 
+                  node-key="id"
+                  :default-expanded-keys="[12,13]"
+                  @node-click="handleNodeClick" 
+                  style="background:#F8F3E4">
+                </el-tree>
               </ul>
               <h4 style="margin:5px 0">管理A端操作:</h4>
               <ul style="padding:3px 0 0 -5px;">
-                <el-tree :data="Apanel" :props="defaultProps" @node-click="handleNodeClick" style="background:#F8F3E4"></el-tree>
+                <el-tree 
+                  :data="Apanel" 
+                  :props="defaultProps" 
+                  @node-click="handleNodeClick" 
+                  style="background:#F8F3E4">
+                </el-tree>
               </ul>
               <h4 style="margin:5px 0">附件:</h4>
               <ul style="padding:3px 0 0 -5px;">
-                <el-tree :data="Appendix" :props="defaultProps" @node-click="handleNodeClick" style="background:#F8F3E4"></el-tree>
+                <el-tree 
+                  :data="Appendix" 
+                  :props="defaultProps" 
+                  @node-click="handleNodeClick" 
+                  style="background:#F8F3E4">
+                </el-tree>
               </ul>
             </div>
           </nav>
@@ -54,10 +71,12 @@ export default {
       ////////蚂蚁税服////////////
       anttax: [
         {
+          id:11,
           label: "项目简介",
           urlName: "Introduction"
         },
         {
+          id:12,
           label: "规划描述文档",
           urlName: "Description",
           children: [
@@ -85,6 +104,7 @@ export default {
         },
         
         {
+          id:13,
           label: "一期_微信公众号",
           urlName: "DescriptionV100",
           children: [
@@ -107,6 +127,7 @@ export default {
           ]
         },
         {
+          id:14,
           label: "参考文档",
           urlName: "PayDevelop",
 
@@ -135,6 +156,7 @@ export default {
       ////////A端管理////////////
       Apanel: [
         {
+          id:21,
           label: "SEO官网文章发布",
           urlName: "NewsPublish",
           children: [
@@ -149,10 +171,12 @@ export default {
           ]
         },
         {
+          id:22,
           label: "A端banner发布注意事项",
           urlName: "BannerPublish"
         },
         {
+          id:23,
           label: "做订单查询不到注册用户",
           urlName: "PersonNotFind"
         }
