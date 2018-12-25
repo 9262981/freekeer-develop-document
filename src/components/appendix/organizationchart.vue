@@ -1,7 +1,7 @@
 <template>
   <div class="routerview">
       <h3>2018企业组织架构</h3>
-      <img src='../../assets/appendix/organizationchart.jpg' width="100%">
+      <img src='../../assets/appendix/organizationchart.jpg' width="100%" preview="1" preview-text="2018企业组织架构">
   </div>
 </template>
 

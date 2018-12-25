@@ -13,7 +13,7 @@
 
 <script>
 export default {
-  name: 'Prototype',
+  name: 'Prototype1',
 
   data() {
     return {

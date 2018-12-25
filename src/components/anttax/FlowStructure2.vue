@@ -13,7 +13,7 @@
 
 
 export default {
-  name: 'FlowStructure',
+  name: 'FlowStructure2',
 
   data() {
     return {

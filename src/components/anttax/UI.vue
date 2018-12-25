@@ -24,9 +24,7 @@ export default {
   name: 'UI',
 
   data() {
-    return {
-      img:Logo
-    }
+
   }
 }
 </script>
